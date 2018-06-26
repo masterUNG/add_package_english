@@ -8,13 +8,14 @@ void main()
 
 //Create RandomEnglishWords
 class RamdomEnglishWords extends StatefulWidget{
+
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
 
     return new MonitorChangeState();
 
   } // State Method
+
 } // RamdomEnglishWords Class
 
 //Create Class for Monotor Change State
@@ -24,10 +25,6 @@ class MonitorChangeState extends State<RamdomEnglishWords>{
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-
-//    final wordPair = new WordPair.random();
-
 
 //    Learn Create ListView
     return new Scaffold(
@@ -43,13 +40,6 @@ class MonitorChangeState extends State<RamdomEnglishWords>{
 
     }),
     );
-
-
-//Last
-//    return new Text(
-//      wordPair.asUpperCase,
-//      style: new TextStyle(fontSize: 30.0));
-
   } //Widget Method
 
   Widget myBuildRow(WordPair wordPair, int index){
@@ -61,19 +51,17 @@ class MonitorChangeState extends State<RamdomEnglishWords>{
         style: new TextStyle(fontSize: 20.0, color: myColor),
       ),
     );
-  }
+  } // Widget myBuildRow
 
 } // MonitorChangeState Class
 
-
 //Create MyApp
 class MyApp extends StatelessWidget{
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-
     final myRandomWord = new WordPair.random();
-
 
     return MaterialApp(
 
@@ -83,6 +71,6 @@ class MyApp extends StatelessWidget{
 
     );
 
+  } // Widget Build
 
-  }
-}
+} // MyApp Class
